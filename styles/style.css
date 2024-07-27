@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  /* border: 2px solid yellow; */
+}
+/* navbar-banner styles s */
+
+.header {
+  margin-top: 57px;
+  /* border: 2px solid rgb(247, 11, 11); */
+  width: 100%;
+  height: 715px;
+}
+.nav-banner-section {
+  /* border: 2px solid rgb(224, 193, 188); */
+  width: 70%;
+  height: 715px;
+  margin: 0 auto;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav {
+  font-size: 2.25rem;
+  font-weight: 800px;
+  color: rgb(230, 83, 60);
+  height: 120%;
+}
+.btn-container {
+  box-sizing: border-box;
+  border-radius: 39px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.primary-btn {
+  margin-left: 30px;
+  border: none;
+  background: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.home-btn {
+  background-color: rgb(230, 83, 60);
+  font-weight: 600px;
+  border-radius: 46px;
+  padding: 8px 20px;
+  margin-left: 0px;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.banner-container {
+  display: flex;
+  gap: 167px;
+}
+span {
+  font-family: "Miama", sans-serif;
+  font-size: 78px;
+  font-weight: 400px;
+}
+.banner-title {
+  font-weight: 900px;
+  font-size: 78px;
+  line-height: 90px;
+  /* color: rgb(255, 255, 255); */
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+.banner {
+  margin-top: 80px;
+}
+.details {
+  font-size: 1rem;
+  font-weight: 400px;
+  line-height: 24px;
+  margin-top: 28px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.download-btn {
+  border: 1px solid rgb(255, 255, 255);
+  font-weight: 600px;
+  border-radius: 46px;
+  padding: 8px 20px;
+  background: none;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+.img-container {
+  margin-top: 30px;
+  width: 350px;
+  height: 580px;
+}
+.img-container img {
+  width: 100%;
+}
+.token1 {
+  position: absolute;
+  bottom: 100px;
+  right: 250px;
+  margin-top: 100px;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 206px;
+  height: 96px;
+  background-color: rgba(48, 48, 48, 0.54);
+  /* filter: blur(5px);
+  -webkit-filter: blur(1px); */
+}
+.token1 h5 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 900px;
+  color: rgb(250, 250, 249);
+}
+.token1 p {
+  margin: 8px 0 0 0;
+  font-size: 16px;
+  font-weight: 400px;
+  color: rgba(239, 237, 232, 0.65);
+}
+.ball {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(230, 83, 60);
+  border-radius: 50%;
+}
+.ball-container {
+  margin: 28px 0 28px 23px;
+}
+.h5-p {
+  margin: 20px 23px 20px 12px;
+}
+.token2 {
+  position: absolute;
+  bottom: 380px;
+  right: -60px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 180px;
+  height: 96px;
+  background-color: rgba(48, 48, 48, 0.54);
+}
+.token2 h2 {
+  font-size: 40px;
+  font-weight: 900px;
+  margin: 0;
+  /* margin: 17px 53px 0px 24px; */
+  color: rgb(255, 255, 255);
+}
+.token2 p {
+  font-size: 13px;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+}
+.h2-p {
+  margin: 17px 53px 16px 24px;
+}
+.ham-burger {
+  display: none;
+}
+/* navber banner style ends here */
+
+/* responsive section */
+@media screen and (max-width: 576px) {
+  .btn-container {
+    display: none;
+  }
+  .ham-burger {
+    display: block;
+  }
+  .banner-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .img-container {
+    margin: 0px;
+  }
+  .token1 {
+    position: absolute;
+    bottom: -50px;
+    right: 230px;
+  }
+  .token2 {
+    position: absolute;
+    bottom: 170px;
+    right: 30px;
+  }
+  .banner-title {
+    font-size: 36px;
+    font-weight: 900px;
+    margin: 0;
+    line-height: 40px;
+  }
+  span {
+    font-size: 60px;
+  }
+  .banner {
+    margin-top: 0px;
+  }
+  .nav-banner-section {
+    width: 80%;
+  }
+}
