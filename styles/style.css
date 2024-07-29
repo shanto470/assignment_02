@@ -5,6 +5,8 @@ body {
   font-family: "Inter", sans-serif;
   background-color: rgb(0, 0, 0);
   width: 100%;
+  max-width: 1045px;
+  margin: 0 auto;
   /* border: 2px solid yellow; */
 }
 /* navbar-banner styles s */
@@ -12,19 +14,20 @@ body {
 .header {
   margin-top: 57px;
   /* border: 2px solid rgb(247, 11, 11); */
-  width: 100%;
   height: 715px;
 }
 .nav-banner-section {
   /* border: 2px solid rgb(224, 193, 188); */
-  width: 70%;
   height: 715px;
-  margin: 0 auto;
   position: relative;
+  /* width: 100%;
+  max-width: 1045px; */
+  /* margin: 0 auto; */
 }
 .navbar {
   display: flex;
   justify-content: space-between;
+
   align-items: center;
 }
 .main-nav {
@@ -49,6 +52,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .home-btn {
+  font-size: 1.125rem;
   background-color: rgb(230, 83, 60);
   font-weight: 600px;
   border-radius: 46px;
@@ -57,10 +61,34 @@ body {
   border: none;
   color: rgb(255, 255, 255);
 }
+.join-btn {
+  font-size: 1.125rem;
+  background-color: rgb(230, 83, 60);
+  height: 54px;
+  width: 224px;
+  font-weight: 600px;
+  border-radius: 46px;
+  padding: 8px 20px;
+  margin-left: 0px;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+.download-btn {
+  font-size: 1.125rem;
+  border: 1px solid rgb(255, 255, 255);
+  font-weight: 600px;
+  border-radius: 46px;
+  padding: 8px 20px;
+  height: 54px;
+  width: 224px;
+  background: none;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
 
 .banner-container {
   display: flex;
-  gap: 167px;
+  gap: 200px;
 }
 span {
   font-family: "Miama", sans-serif;
@@ -85,15 +113,7 @@ span {
   margin-top: 28px;
   color: rgba(255, 255, 255, 0.5);
 }
-.download-btn {
-  border: 1px solid rgb(255, 255, 255);
-  font-weight: 600px;
-  border-radius: 46px;
-  padding: 8px 20px;
-  background: none;
-  color: rgb(255, 255, 255);
-  margin-left: 10px;
-}
+
 .img-container {
   margin-top: 30px;
   width: 350px;
@@ -104,8 +124,8 @@ span {
 }
 .token1 {
   position: absolute;
-  bottom: 100px;
-  right: 250px;
+  bottom: 85px;
+  right: 280px;
   margin-top: 100px;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -143,10 +163,10 @@ span {
 .token2 {
   position: absolute;
   bottom: 380px;
-  right: -60px;
+  right: -70px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  width: 180px;
+  width: 206px;
   height: 96px;
   background-color: rgba(48, 48, 48, 0.54);
 }
@@ -173,11 +193,24 @@ span {
 
 /* responsive section */
 @media screen and (max-width: 576px) {
+  .join-btn {
+    width: 170px;
+    margin: 20px 0px;
+  }
+  .download-btn {
+    width: 170px;
+    margin: 20px 0px 0px 5px;
+  }
+  body {
+    max-width: 90%;
+  }
   .btn-container {
     display: none;
   }
+
   .ham-burger {
     display: block;
+    color: #fff;
   }
   .banner-container {
     flex-direction: column;
@@ -188,13 +221,44 @@ span {
   }
   .token1 {
     position: absolute;
-    bottom: -50px;
-    right: 230px;
+    bottom: -115px;
+    right: 180px;
+    width: 160px;
+    height: 72px;
+  }
+  .token1 h5 {
+    font-size: 19px;
+  }
+  .token1 p {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .ball {
+    height: 30px;
+    width: 30px;
+  }
+  .ball-container {
+    margin: 21px 0 21px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .token2 {
     position: absolute;
-    bottom: 170px;
-    right: 30px;
+    bottom: 100px;
+    right: 10px;
+    width: 150px;
+    height: 72px;
+  }
+  .h2-p {
+    margin: 12px 0px 0px 18px;
+  }
+  .token2 h2 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .token2 p {
+    font-size: 9px;
   }
   .banner-title {
     font-size: 36px;
@@ -207,8 +271,5 @@ span {
   }
   .banner {
     margin-top: 0px;
-  }
-  .nav-banner-section {
-    width: 80%;
   }
 }
