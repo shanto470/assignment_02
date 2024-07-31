@@ -192,7 +192,7 @@ span {
 /* nav-ber banner style ends here */
 /* HABITS SECTION STARTS HERE */
 .habit-section {
-  border: 2px solid rgb(93, 237, 194);
+  /* border: 2px solid rgb(93, 237, 194); */
   height: 452px;
   margin-top: 100px;
 }
@@ -346,5 +346,15 @@ span {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     /* gap: 38px; */
+  }
+  .habit-description h2 {
+    font-size: 32px;
+  }
+  .habit-pera {
+    margin-top: 14px;
+  }
+
+  .common-habit-img {
+    margin: 0 auto;
   }
 }
