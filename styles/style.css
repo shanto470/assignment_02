@@ -258,7 +258,7 @@ span {
 .run-section {
   /* border: 2px solid limegreen; */
   height: 375px;
-  margin: 100px 0 0 0;
+  margin: 100px 0 100px 0;
   border-radius: 18px;
   background-color: rgb(34, 34, 34);
   display: grid;
@@ -301,6 +301,9 @@ span {
 
 /* responsive section */
 @media screen and (max-width: 576px) {
+  .header {
+    height: 100%;
+  }
   .join-btn {
     width: 170px;
     margin: 20px 0px;
@@ -399,8 +402,37 @@ span {
   .habit-pera {
     margin-top: 14px;
   }
-
   .common-habit-img {
     margin: 0 auto;
+  }
+  /* RUN SECTION RESPONSIVE */
+
+  .run-section {
+    margin-top: 1050px;
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 33px;
+  }
+  .run-description {
+    margin: 0px;
+  }
+  .run-description h2 {
+    font-size: 32px;
+  }
+
+  .run-btn {
+    width: 285px;
+    margin: 20px;
+  }
+
+  .run-img {
+    margin: 0;
+    /* display: block; */
+    width: 285px;
+    height: 170px;
+  }
+  .line-brk {
+    display: none;
   }
 }
