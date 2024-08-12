@@ -4,14 +4,17 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: rgb(0, 0, 0);
-  width: 100%;
+  /* width: 100%;
   max-width: 1045px;
-  margin: 0 auto;
+  margin: 0 auto; */
   /* border: 2px solid yellow; */
 }
 /* navbar-banner styles s */
 
 .header {
+  width: 100%;
+  max-width: 1045px;
+  margin: 0 auto;
   margin-top: 57px;
   /* border: 2px solid rgb(53, 30, 30); */
   height: 715px;
@@ -193,7 +196,9 @@ span {
 /* HABITS SECTION STARTS HERE */
 .habit-section {
   /* border: 2px solid rgb(93, 237, 194); */
-
+  width: 100%;
+  max-width: 1045px;
+  margin: 0 auto;
   height: 452px;
   margin-top: 100px;
 }
@@ -258,8 +263,10 @@ span {
 /* RUN SECTION STARTS HERE */
 .run-section {
   /* border: 2px solid limegreen; */
+  width: 100%;
+  max-width: 1045px;
   height: 375px;
-  margin: 100px 0 100px 0;
+  margin: 100px auto;
   border-radius: 18px;
   background-color: rgb(34, 34, 34);
   display: grid;
@@ -300,10 +307,13 @@ span {
   border: none;
   color: rgb(255, 255, 255);
 }
+/* .bmi-section {
+  display: none;
+} */
 .bmi-heading {
   width: 670px;
   margin: 80px auto;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
 }
 .bmi-h2 {
   font-size: 48px;
@@ -313,7 +323,6 @@ span {
 }
 .bmi-description {
   height: 500px;
-  margin: 0 -116px;
   /* padding: 52px 160px; */
   /* border: 2px solid chocolate; */
   background-color: rgb(34, 34, 34);
@@ -323,10 +332,10 @@ span {
   margin: 5px auto;
   display: flex;
   gap: 180px;
-  border: 2px solid rgb(239, 10, 10);
+  /* border: 2px solid rgb(239, 10, 10); */
 }
 .tab {
-  border: 2px solid rgb(254, 236, 77);
+  /* border: 2px solid rgb(254, 236, 77); */
   width: 38%;
 }
 table {
@@ -362,7 +371,7 @@ th {
 }
 
 .form-container {
-  border: 2px solid rgb(247, 243, 243);
+  /* border: 2px solid rgb(247, 243, 243); */
   width: 62%;
 }
 .form {
@@ -389,11 +398,27 @@ th {
   border-radius: 8px;
   padding-left: 12px;
 }
-
+.bmi-btn {
+  font-size: 1.125rem;
+  background-color: rgb(230, 83, 60);
+  height: 54px;
+  width: 224px;
+  font-weight: 600px;
+  border-radius: 42px;
+  padding: 16px 40px;
+  margin: 30px 0 0 0;
+  border: none;
+  color: rgb(255, 255, 255);
+}
 /* responsive section */
 @media screen and (max-width: 576px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
   .header {
     height: 100%;
+    max-width: 90%;
   }
   .join-btn {
     width: 170px;
@@ -403,9 +428,9 @@ th {
     width: 170px;
     margin: 20px 0px 0px 5px;
   }
-  body {
+  /* body {
     max-width: 90%;
-  }
+  } */
   .btn-container {
     display: none;
   }
@@ -477,6 +502,7 @@ th {
 
   /* HABIT SECTION RESPONSIVE */
   .habit-section {
+    max-width: 90%;
     margin-top: 370px;
   }
   .habit-img-container {
@@ -499,14 +525,18 @@ th {
   /* RUN SECTION RESPONSIVE */
 
   .run-section {
+    max-width: 90%;
     margin-top: 1050px;
     height: 100%;
     grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    padding: 33px;
+    gap: 0px;
   }
   .run-description {
     margin: 0px;
+    padding: 33px;
+  }
+  .rn-sec-img {
+    padding: 0px 33px 33px 33px;
   }
   .run-description h2 {
     font-size: 32px;
@@ -525,5 +555,40 @@ th {
   }
   .line-brk {
     display: none;
+  }
+
+  /* BMI SECTION START HERE */
+  .bmi-h2 {
+    font-size: 32px;
+  }
+  .bmi-heading {
+    width: 90%;
+  }
+  .bmi-description {
+    width: 100%;
+    height: 780px;
+    /* margin: 0 -76px
+     */
+  }
+  .bmi {
+    flex-direction: column;
+    gap: 0px;
+    width: 90%;
+  }
+  .tab {
+    /* width: 90%; */
+    width: 310px;
+  }
+  .bmi-h4 {
+    font-size: 16px;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .input {
+    width: 148px;
+  }
+  .last-input {
+    width: 325px;
   }
 }
