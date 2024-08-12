@@ -193,6 +193,7 @@ span {
 /* HABITS SECTION STARTS HERE */
 .habit-section {
   /* border: 2px solid rgb(93, 237, 194); */
+
   height: 452px;
   margin-top: 100px;
 }
@@ -285,6 +286,7 @@ span {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 0px;
 }
 .run-btn {
   font-size: 1.125rem;
@@ -297,6 +299,95 @@ span {
   margin: 30px 0 0 0;
   border: none;
   color: rgb(255, 255, 255);
+}
+.bmi-heading {
+  width: 670px;
+  margin: 80px auto;
+  border: 2px solid pink;
+}
+.bmi-h2 {
+  font-size: 48px;
+  font-weight: 900px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.bmi-description {
+  height: 500px;
+  margin: 0 -116px;
+  /* padding: 52px 160px; */
+  /* border: 2px solid chocolate; */
+  background-color: rgb(34, 34, 34);
+}
+.bmi {
+  width: 1045px;
+  margin: 5px auto;
+  display: flex;
+  gap: 180px;
+  border: 2px solid rgb(239, 10, 10);
+}
+.tab {
+  border: 2px solid rgb(254, 236, 77);
+  width: 38%;
+}
+table {
+  margin-top: 50px;
+  border: 1px solid wheat;
+  border-collapse: collapse;
+  width: 310px;
+}
+td {
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 400px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+th {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500px;
+  color: rgb(255, 255, 255);
+}
+td,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* padding: 12px 0px 0px 18px; */
+}
+.bmi-h4 {
+  font-weight: 900px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.form-container {
+  border: 2px solid rgb(247, 243, 243);
+  width: 62%;
+}
+.form {
+  margin-top: 30px;
+}
+.input {
+  width: 245px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  margin-top: 12px;
+  padding-left: 12px;
+}
+.diff {
+  margin-left: 8px;
+}
+.last-input {
+  width: 520px;
+  height: 48px;
+  margin-top: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding-left: 12px;
 }
 
 /* responsive section */
@@ -423,7 +514,7 @@ span {
 
   .run-btn {
     width: 285px;
-    margin: 20px;
+    /* margin: 20px; */
   }
 
   .run-img {
