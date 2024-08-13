@@ -204,12 +204,18 @@
                 <input class="input" type="text" placeholder="Height/cm" />
                 <input class="input diff" type="text" placeholder="Weight/kg" />
                 <input class="input" type="text" placeholder="Age" />
-                <input class="input diff" type="text" placeholder="Sex" />
-                <input
-                  class="last-input"
-                  type="text"
-                  placeholder="Select an activity factor"
-                />
+                <select class="select" name="" id="">
+                  <option value="0">Sex</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Others</option>
+                </select>
+                <select class="select2" name="" id="">
+                  <option value="0">Select an activity factor</option>
+                  <option value="1">Swimming</option>
+                  <option value="2">Yoga</option>
+                  <option value="3">Jump</option>
+                </select>
                 <button class="bmi-btn">Calculate</button>
               </form>
             </div>
@@ -218,6 +224,41 @@
       </section>
       <!-- BMI SECTION ENDS HERE -->
     </main>
-    <footer></footer>
+    <footer class="footer-container">
+      <div class="footer-description">
+        <div class="fit-footer">
+          <h1 class="foot-h1"><i>Fitness</i></h1>
+          <p class="run-pera">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym. With hundreds of
+            professional workouts.
+          </p>
+        </div>
+        <div class="anchors">
+          <div class="first-anchor">
+            <h2 class="anchor-h2">Get Started</h2>
+            <div class="just-anchor">
+              <a href="#">Service</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Affiliate Program</a>
+              <a href="#">About Us</a>
+            </div>
+          </div>
+          <div class="first-anchor">
+            <h2 class="anchor-h2">Get Started</h2>
+            <div class="just-anchor">
+              <a href="#">Fitness</a>
+              <a href="#">Perform</a>
+              <a href="#">Workout Libary</a>
+              <a href="#">App Design</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="ends">
+        <p class="end-pera">All right reserved @Fitness 2024</p>
+      </div>
+    </footer>
   </body>
 </html>
