@@ -11,6 +11,7 @@
     ></script>
   </head>
   <body>
+    <!-- NAV-BAR AND BANNER STARTS HERE -->
     <header class="header">
       <section class="nav-banner-section">
         <!-- nav section start here -->
@@ -19,12 +20,12 @@
             <h3><i class="main-nav">Fitness</i></h3>
           </div>
           <div class="btn-container">
-            <div class="nav-btn">
-              <button class="primary-btn home-btn">Home</button>
-              <button class="primary-btn">Service</button>
-              <button class="primary-btn">Contact</button>
-              <button class="primary-btn">About</button>
-            </div>
+            <!-- <div class="nav-btn"> -->
+            <button class="home-btn">Home</button>
+            <button class="primary-btn">Service</button>
+            <button class="primary-btn">Contact</button>
+            <button class="primary-btn">About</button>
+            <!-- </div> -->
           </div>
           <div class="ham-burger">
             <i class="fa-solid fa-bars"></i>
@@ -35,15 +36,18 @@
         <div class="banner-container">
           <div class="banner">
             <h1 class="banner-title">
-              Get body in <br /><span>shape</span> & stay <br />healthy
+              Get body in <br /><span class="span">shape</span> & stay
+              <br />healthy
             </h1>
             <p class="details">
               A huge selection of health and fitness content, healthy recipes
-              <br />
+              <br class="line-brk" />
               and transformation stories to help you get fit and stay fit!
             </p>
 
-            <button class="join-btn">Join Club Now!</button>
+            <button class="join-btn">
+              Join <span class="club">Club</span> Now!
+            </button>
             <button class="download-btn">Download App</button>
           </div>
 
@@ -52,7 +56,7 @@
             <div class="token1">
               <div class="ball-container">
                 <div class="ball">
-                  <i class="fa-solid fa-play play-icon"></i>
+                  <i class="fa-solid fa-play" id="play-icons"></i>
                 </div>
               </div>
               <div class="h5-p">
@@ -70,8 +74,9 @@
         </div>
       </section>
     </header>
+    <!-- NAV-BAR AND BANNER ENDS HERE -->
     <main>
-      <!-- HEBIT SECTION STARTS HERE -->
+      <!-- HABIT SECTION STARTS HERE -->
       <section class="habit-section">
         <div class="habit-description">
           <h2>Change Your Habits</h2>
@@ -161,7 +166,7 @@
           <h2 class="bmi-h2">BMI Calculator</h2>
           <p class="run-pera">
             We believe fitness should be accessible to everyone, everywhere,
-            regardless of income or <br />
+            regardless of income or <br class="line-brk" />
             access to a gym.
           </p>
         </div>
@@ -200,7 +205,7 @@
               <h4 class="bmi-h4">Calculate your BMI</h4>
               <p class="run-pera">
                 We believe fitness should be accessible to everyone, everywhere,
-                regardless of<br />
+                regardless of<br class="line-brk" />
                 income or access to a gym.
               </p>
               <form class="form" action="">
@@ -287,7 +292,28 @@
           </div>
         </div>
       </section>
+      <!-- MEET OUR TEAM SECTION ENDS HERE -->
+      <!-- CHALLENGE SECTION STARTS HERE -->
+      <section class="challange-section">
+        <div class="card">
+          <h1>1000+</h1>
+          <h3 class="card-h3">Engaged Members</h3>
+          <p class="card-para">Join our thriving community today</p>
+        </div>
+        <div class="card">
+          <h1>40+</h1>
+          <h3 class="card-h3">Classes Offered Weekly</h3>
+          <p class="card-para">Choose from a variety of workouts</p>
+        </div>
+        <div class="card">
+          <h1>99%</h1>
+          <h3 class="card-h3">Satisfaction Guarantee</h3>
+          <p class="card-para">We focus on your results and happiness</p>
+        </div>
+      </section>
+      <!-- CHALLENGE SECTION ENDS HERE -->
     </main>
+    <!-- FOOTER STARTS HERE -->
     <footer class="footer-container">
       <div class="footer-description">
         <div class="fit-footer">
@@ -324,5 +350,6 @@
         <p class="end-pera">All right reserved @Fitness 2024</p>
       </div>
     </footer>
+    <!-- FOOTER ENDS HERE -->
   </body>
 </html>

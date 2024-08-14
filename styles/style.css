@@ -1,75 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/miama");
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
   font-family: "Inter", sans-serif;
   background-color: rgb(0, 0, 0);
-  /* width: 100%;
-  max-width: 1045px;
-  margin: 0 auto; */
-  /* border: 2px solid yellow; */
+  
 }
-/* navbar-banner styles s */
 
+/* NAV-BENNER SECTION STYLE */
 .header {
-  width: 100%;
-  max-width: 1045px;
-  margin: 0 auto;
-  margin-top: 57px;
-  /* border: 2px solid rgb(53, 30, 30); */
+  background-image: linear-gradient(rgb(17, 17, 17),rgba(78, 78, 78, 0.404),rgba(119, 119, 119, 0));
+  padding-top: 55px;
   height: 715px;
 }
 .nav-banner-section {
+  width: 100%;
+  max-width: 1045px;
+  margin: 0 auto;
   /* border: 2px solid rgb(224, 193, 188); */
   height: 715px;
   position: relative;
-  /* width: 100%;
-  max-width: 1045px; */
-  /* margin: 0 auto; */
+  
 }
 .navbar {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
 }
 .main-nav {
   font-size: 2.25rem;
-  font-weight: 800px;
+  font-weight: 800;
   color: rgb(230, 83, 60);
   height: 120%;
 }
-.btn-container {
-  box-sizing: border-box;
+.nav-btn{
+  display: flex;
+  align-items: center;
+  gap: 47px;
+  border: 1px solid #222222;
   border-radius: 39px;
-  padding: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 46px;
 }
+ .btn-container {
 
-.primary-btn {
-  margin-left: 30px;
-  border: none;
-  background: none;
-  font-size: 1.125rem;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
+   display: flex;
+  align-items: center;
+  gap: 47px;
+  border: 1px solid #222222;
+  border-radius: 39px;
+  height: 46px; 
+} 
+
+
+ .primary-btn{
+  font-family: "Inter";
+    padding: 8px 20px;
+    border-radius: 46px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.125rem;
 }
-.home-btn {
+ 
+.home-btn{
+  font-family: "Inter";
+    padding: 8px 20px;
+    border-radius: 46px;
+    background-color: #E6533C;
+    font-size: 1.125rem;
+    border: none;
+    color: white;
+    margin-left: 5px;
+}
+/* .home-btn {
   font-size: 1.125rem;
   background-color: rgb(230, 83, 60);
-  font-weight: 600px;
+  font-weight: 600;
   border-radius: 46px;
   padding: 8px 20px;
   margin-left: 0px;
   border: none;
   color: rgb(255, 255, 255);
-}
+} */
 .join-btn {
   font-size: 1.125rem;
   background-color: rgb(230, 83, 60);
   height: 54px;
   width: 224px;
-  font-weight: 600px;
+  font-weight: 600;
   border-radius: 46px;
   padding: 8px 20px;
   margin-left: 0px;
@@ -79,7 +101,7 @@ body {
 .download-btn {
   font-size: 1.125rem;
   border: 1px solid rgb(255, 255, 255);
-  font-weight: 600px;
+  font-weight: 600;
   border-radius: 46px;
   padding: 8px 20px;
   height: 54px;
@@ -90,19 +112,22 @@ body {
 }
 
 .banner-container {
+  /* background-color: red; */
+  /* background-image:  linear-gradient(rgb(17, 17, 17),rgba(78, 78, 78, 0.404),rgba(119, 119, 119, 0));; */
   display: flex;
   gap: 200px;
 }
-span {
+.span {
+
+  font-style: italic;
   font-family: "Miama", sans-serif;
   font-size: 78px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 .banner-title {
-  font-weight: 900px;
-  font-size: 78px;
-  line-height: 90px;
-  /* color: rgb(255, 255, 255); */
+  font-weight: 900;
+  font-size: 76px;
+  line-height: 120%;
   margin: 0;
   color: rgb(255, 255, 255);
 }
@@ -111,10 +136,11 @@ span {
 }
 .details {
   font-size: 1rem;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
   margin-top: 28px;
   color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 28px;
 }
 
 .img-container {
@@ -127,8 +153,8 @@ span {
 }
 .token1 {
   position: absolute;
-  bottom: 85px;
-  right: 280px;
+  bottom: 117px;
+  right: 278px;
   margin-top: 100px;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -136,22 +162,22 @@ span {
   width: 206px;
   height: 96px;
   background-color: rgba(48, 48, 48, 0.54);
-  /* filter: blur(5px);
-  -webkit-filter: blur(1px); */
+  backdrop-filter:blur(4px);
+ 
 }
 .token1 h5 {
   margin: 0;
   font-size: 23px;
-  font-weight: 900px;
+  font-weight: 900;
   color: rgb(250, 250, 249);
 }
 .token1 p {
   margin: 8px 0 0 0;
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   color: rgba(239, 237, 232, 0.65);
 }
-.play-icon{
+#play-icons{
   display: none;
   color: white;
   margin-left: 2px;
@@ -173,35 +199,36 @@ span {
 }
 .token2 {
   position: absolute;
-  bottom: 380px;
-  right: -70px;
+  bottom: 414px;
+  right: -53px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  width: 206px;
+  width: 193px;
   height: 96px;
-  background-color: rgba(48, 48, 48, 0.54);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
 }
 .token2 h2 {
   font-size: 40px;
-  font-weight: 900px;
+  font-weight: 900;
   margin: 0;
   /* margin: 17px 53px 0px 24px; */
   color: rgb(255, 255, 255);
 }
 .token2 p {
   font-size: 13px;
-  font-weight: 400px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.65);
   margin: 0;
 }
 .h2-p {
-  margin: 17px 53px 16px 24px;
+  margin: 17px 35px 16px 24px;
 }
 .ham-burger {
   display: none;
 }
-/* nav-ber banner style ends here */
-/* HABITS SECTION STARTS HERE */
+
+/* HABITS SECTION STYLE*/
 .habit-section {
   /* border: 2px solid rgb(93, 237, 194); */
   width: 100%;
@@ -255,7 +282,7 @@ span {
 .habit-h6 {
   margin: 30px 0px 0px 0px;
   font-size: 18px;
-  font-weight: 600px;
+  font-weight: 600;
   color: rgb(255, 255, 255);
   margin: 25px 0 5px 0;
 }
@@ -266,9 +293,9 @@ span {
   margin: 0px;
   /* margin-top: 14px; */
 }
-/* HABIT SECTION ENDS HERE */
 
-/* RUN SECTION STARTS HERE */
+
+/* RUN SECTION STYLE  */
 .run-section {
   /* border: 2px solid limegreen; */
   width: 100%;
@@ -314,26 +341,24 @@ span {
   background-color: rgb(230, 83, 60);
   height: 54px;
   width: 224px;
-  font-weight: 600px;
+  font-weight: 600;
   border-radius: 42px;
   padding: 16px 40px;
   margin: 30px 0 0 0;
   border: none;
   color: rgb(255, 255, 255);
 }
-/* .bmi-section {
-  display: none;
-} */
+/* BMI SECTION STYLE */
 .bmi-heading {
   width: 670px;
-  margin: 80px auto;
+  margin: 32px auto;
   /* border: 2px solid pink; */
 }
 .bmi-h2 {
   font-size: 48px;
-  font-weight: 900px;
+  font-weight: 900;
   color: rgb(255, 255, 255);
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 .bmi-description {
   height: 500px;
@@ -361,14 +386,14 @@ table {
 td {
   padding: 12px 18px;
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
 }
 
 th {
   padding: 15px;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   color: rgb(255, 255, 255);
 }
 td,
@@ -377,11 +402,11 @@ th {
   /* padding: 12px 0px 0px 18px; */
 }
 .bmi-h4 {
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 28px;
   color: rgb(255, 255, 255);
   margin-top: 50px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .form-container {
@@ -409,7 +434,7 @@ th {
   background-color: rgb(230, 83, 60);
   height: 54px;
   width: 224px;
-  font-weight: 600px;
+  font-weight: 600;
   border-radius: 42px;
   padding: 16px 40px;
   margin: 30px 0 0 0;
@@ -437,10 +462,10 @@ th {
   margin-top: 12px;
   padding-left: 12px;
 }
-/* MEET OUR TEAM SECTION STARTS HERE */
+/* MEET OUR TEAM SECTION STYLE */
 .meet-container {
   width: 1045px;
-  margin: 90px auto;
+  margin: 65px auto;
   text-align: center;
 }
 .meet-h2 {
@@ -453,8 +478,8 @@ th {
   font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  margin: 14px;
-  line-height: 24px;
+  margin: 14px 0 55px 0px;
+    line-height: 24px;
 }
 .img {
   /* width: 320px;
@@ -471,7 +496,7 @@ th {
   background-color: rgba(255, 255, 255, 0.1);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 1045px;
+  /* width: 1045px; */
   padding: 20px;
   column-gap: 20px;
   row-gap: 20px;
@@ -502,20 +527,52 @@ th {
 
 .pic-cap{
 font-size: 20px;
-font-weight: 900px;
+font-weight: 900;
 color: rgb(255, 255, 255);
 margin: 0px;
 }
 .pic-pera{
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 4px;
 }
+/* CHALLENGE SECTION STYLE */
+.challange-section{
+  max-width: 1045px;
+  margin: 0 auto;
+  background-color: rgb(34, 34, 34);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* justify-content: space-between; */
+  border-radius: 18px;
+  padding: 20px 0;
+}
+.card{
+text-align: center;}
+.card > h1{
+  margin: 0px;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  line-height:120% ;
+}
+.card-h3{
+  margin: 10px 0px 8px 0px;
+  color: rgba(255, 255, 255, 0.582);
+  font-size: 26px;
+  font-weight: 600;
+line-height: 100%;
+}
+.card-para{
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
 
 
-
-/*   FOOTER SECTION */
+/*   FOOTER SECTION STYLE */
 .footer-container {
   background-color: rgba(255, 255, 255, 0.1);
   margin-top: 80px;
@@ -543,7 +600,7 @@ margin: 0px;
 }
 .foot-h1 {
   font-size: 70px;
-  font-weight: 800px;
+  font-weight: 800;
   color: rgb(230, 83, 60);
   margin: 50px 0px 0px 0px;
   line-height: 120%;
@@ -555,13 +612,13 @@ margin: 0px;
 
 .anchor-h2 {
   font-size: 32px;
-  font-weight: 700px;
+  font-weight: 700;
   color: rgb(255, 255, 255);
   margin: 45px 0px 0px 0px;
 }
 .sec-anchor-h2 {
   font-size: 32px;
-  font-weight: 700px;
+  font-weight: 700;
   color: rgb(255, 255, 255);
   margin: 45px 0px 0px 0px;
 }
@@ -586,7 +643,7 @@ a {
 
 .end-pera {
   font-size: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   /* margin-bottom: 35px; */
@@ -597,14 +654,18 @@ a {
 }
 /* responsive section */
 @media screen and (max-width: 576px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
+ 
   .header {
     height: 100%;
-    max-width: 90%;
+    /* max-width: 90%; */
   }
+  /* NAV-BANNER SECTION RESPONSIVE */
+  .nav-banner-section
+{
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
   .join-btn {
     width: 170px;
     margin: 20px 0px;
@@ -627,15 +688,18 @@ a {
   .banner-container {
     flex-direction: column;
     gap: 50px;
+    margin-top: 50px;
   }
   .img-container {
     margin: 0px;
   }
+.h5-p{
+  margin: 20px 15px 20px 12px;}
   .token1 {
     position: absolute;
-    bottom: -60px;
-    right: 180px;
-    width: 160px;
+    bottom: -122px;
+    right: 217px;
+    width: 155px;
     height: 72px;
   }
   .token1 h5 {
@@ -645,7 +709,7 @@ a {
     font-size: 12px;
     margin-top: 0px;
   }
-  .play-icon{
+  #play-icons{
     display: inherit;
   }
   .ball {
@@ -660,8 +724,8 @@ a {
   }
   .token2 {
     position: absolute;
-    bottom: 155px;
-    right: 10px;
+    bottom: 73px;
+    right: 36px;
     width: 150px;
     height: 72px;
   }
@@ -677,21 +741,24 @@ a {
   }
   .banner-title {
     font-size: 36px;
-    font-weight: 900px;
+    font-weight: 900;
     margin: 0;
     line-height: 40px;
   }
-  span {
-    font-size: 60px;
+  .span {
+    font-size: 36px;
   }
   .banner {
     margin-top: 0px;
+  }
+  .club{
+    display: none;
   }
 
   /* HABIT SECTION RESPONSIVE */
   .habit-section {
     max-width: 90%;
-    margin-top: 370px;
+    margin-top: 410px;
   }
   .habit-img-container {
     /* border: 2px solid chocolate; */
@@ -731,14 +798,16 @@ a {
   }
 
   .run-btn {
-    width: 285px;
+    width: 100%;
+    /* width: 285px; */
     /* margin: 20px; */
   }
 
   .run-img {
     margin: 0;
     /* display: block; */
-    width: 285px;
+    /* width: 285px; */
+    width: 100%;
     height: 170px;
   }
   .line-brk {
@@ -751,7 +820,7 @@ a {
     display: block;
   }
 
-  /* BMI SECTION START HERE */
+  /* BMI SECTION RESPONSIVE  */
   .bmi-h2 {
     font-size: 32px;
   }
@@ -795,7 +864,7 @@ a {
     margin-bottom: 43px;
   }
 
-  /*  footer section */
+  /*  FOOTER SECTION RESPONSIVE */
   .footer-description {
     flex-direction: column;
     width: 90%;
@@ -824,6 +893,7 @@ a {
     text-align: left;
     margin-left: 20px;
   }
+  /* MEET OUR TEAM SECTION RESPONSIVE  */
   .meet-container{
     width: 90%;
   }
@@ -848,6 +918,13 @@ a {
   }
   #card4{
     order: 4;
+  }
+  /* CHALLENGE SECTION RESPONSIVE  */
+  .challange-section{
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+    width: 90%;
+    max-width: 100%;
   }
   
 }
